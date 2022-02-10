@@ -14,7 +14,7 @@ class MenuCell: UITableViewCell {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var imageIcon: UIImageView!
     
-    func configure(with menu: Menu, andWith image:UIImage) {
+    func configure(with menu: Menu) {
         self.nameLabel.text = menu.name
         self.descriptionLabel.text = menu.description
         self.priceLabel.text = "\(menu.price) ₽"

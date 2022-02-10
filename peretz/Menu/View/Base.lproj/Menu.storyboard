@@ -11,6 +11,7 @@
         <!--Главная-->
         <scene sceneID="y6P-RV-C7q">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NaR-xR-C2c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="Qvt-EQ-BH6" userLabel="Главная" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tkJ-I5-K2C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -45,7 +46,6 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="EeJ-nh-pb5"/>
                     </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NaR-xR-C2c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="455.07246376811599" y="-430.58035714285711"/>
         </scene>
@@ -152,6 +152,7 @@
         <!--Navigation Controller-->
         <scene sceneID="9bW-uR-v19">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jBV-p9-e8a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yjj-re-vBc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GNE-MW-Lef">
@@ -169,7 +170,6 @@
                         <segue destination="Qvt-EQ-BH6" kind="relationship" relationship="rootViewController" id="7Ul-0l-kiW"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jBV-p9-e8a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-455.07246376811599" y="-430.58035714285711"/>
         </scene>

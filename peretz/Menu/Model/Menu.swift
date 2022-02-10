@@ -11,28 +11,28 @@ import UIKit
 struct Menu {
     
     var id: Int
-    var date: Int
+    var date: String
     var name: String
     var description: String
     var new: Bool
-    var variations: String
+    var variations: Array<Any>
     var price: Int
-    var image_app: UIImage
-    var image: UIImage
+    var image_app: UIImageView
+    var image: UIImageView
     var sort: Int
 
     
     // failable initializer (проваливающийся инициализатор) - ИЗУЧИТЬ!
     init?(dict: [String: AnyObject]) {
         guard let id = dict["id"] as? Int,
-              let date = dict["date"] as? Int,
+              let date = dict["date"] as? String,
               let name =  dict["name"] as? String,
               let description =  dict["description"] as? String,
               let new =  dict["new"] as? Bool,
-              let variations =  dict["variations"] as? String,
+              let variations =  dict["variations"] as? Array<Any>,
               let price =  dict["price"] as? Int,
-              let image_app =  dict["image_app"] as? UIImage,
-              let image =  dict["image"] as? UIImage,
+              let image_app =  dict["image_app"] as? UIImageView,
+              let image =  dict["image"] as? UIImageView,
               let sort =  dict["500"] as? Int else { return nil}
         
         self.id = id

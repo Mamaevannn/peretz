@@ -10,10 +10,14 @@ import UIKit
 class MenuCell: UITableViewCell {
     
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var descriptionTextView: UITextView!
-
-    func configure(with menu: Menu) {
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var imageIcon: UIImageView!
+    
+    func configure(with menu: Menu, andWith image:UIImage) {
         self.nameLabel.text = menu.name
-        self.descriptionTextView.text = menu.description
+        self.descriptionLabel.text = menu.description
+        self.priceLabel.text = "\(menu.price) ₽"
+        self.imageIcon = menu.image
     }
 }

@@ -15,10 +15,13 @@
 		AC3B153B27B299910094D04B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3B153927B299910094D04B /* LaunchScreen.storyboard */; };
 		AC3B156827B2F3100094D04B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3B155827B2F2E10094D04B /* Alamofire.framework */; };
 		AC3B156927B2F3100094D04B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC3B155827B2F2E10094D04B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AC3B157927B2FC0B0094D04B /* menuCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3B157827B2FC0B0094D04B /* menuCellVC.swift */; };
 		AC3B15B827B459E80094D04B /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3B15B527B459B30094D04B /* SDWebImage.framework */; };
 		AC3B15B927B459E80094D04B /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC3B15B527B459B30094D04B /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC3B15C327B46F010094D04B /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3B15C227B46F010094D04B /* MenuCell.swift */; };
+		AC3B15D127B4739E0094D04B /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3B15D027B4739E0094D04B /* Menu.swift */; };
+		AC3B15D427B478A40094D04B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3B15D327B478A40094D04B /* NetworkService.swift */; };
+		AC3B15D727B47F180094D04B /* MenuNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3B15D627B47F180094D04B /* MenuNetworkService.swift */; };
+		AC3B15D927B4801F0094D04B /* GetMenuResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3B15D827B4801F0094D04B /* GetMenuResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,9 +129,12 @@
 		AC3B153A27B299910094D04B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC3B153C27B299910094D04B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC3B154C27B2F2E10094D04B /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
-		AC3B157827B2FC0B0094D04B /* menuCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = menuCellVC.swift; path = peretz/menuCellVC.swift; sourceTree = SOURCE_ROOT; };
 		AC3B15AB27B459B30094D04B /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = "SDWebImage-master/SDWebImage.xcodeproj"; sourceTree = "<group>"; };
 		AC3B15C227B46F010094D04B /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		AC3B15D027B4739E0094D04B /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		AC3B15D327B478A40094D04B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		AC3B15D627B47F180094D04B /* MenuNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuNetworkService.swift; sourceTree = "<group>"; };
+		AC3B15D827B4801F0094D04B /* GetMenuResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMenuResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,7 +174,6 @@
 			children = (
 				AC3B15BA27B464260094D04B /* Application */,
 				AC3B15BB27B4646C0094D04B /* Menu */,
-				AC3B157827B2FC0B0094D04B /* menuCellVC.swift */,
 				AC3B153C27B299910094D04B /* Info.plist */,
 				AC3B153727B299910094D04B /* Assets.xcassets */,
 			);
@@ -237,6 +242,7 @@
 				AC3B157627B2FB2F0094D04B /* Model */,
 				AC3B157527B2FB2A0094D04B /* View */,
 				AC3B156C27B2FB1E0094D04B /* Controller */,
+				AC3B15D227B478900094D04B /* NetworkService */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -246,8 +252,8 @@
 			children = (
 				AC3B15BE27B464CC0094D04B /* Model */,
 				AC3B15BD27B464C70094D04B /* View */,
-				AC3B153427B299900094D04B /* Menu.storyboard */,
 				AC3B15BC27B464BB0094D04B /* Controller */,
+				AC3B15D527B47EE70094D04B /* MenuNetworkService */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -264,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				AC3B15C227B46F010094D04B /* MenuCell.swift */,
+				AC3B153427B299900094D04B /* Menu.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -271,8 +278,26 @@
 		AC3B15BE27B464CC0094D04B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AC3B15D027B4739E0094D04B /* Menu.swift */,
+				AC3B15D827B4801F0094D04B /* GetMenuResponse.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AC3B15D227B478900094D04B /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				AC3B15D327B478A40094D04B /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		AC3B15D527B47EE70094D04B /* MenuNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				AC3B15D627B47F180094D04B /* MenuNetworkService.swift */,
+			);
+			path = MenuNetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,8 +465,11 @@
 				AC3B153327B299900094D04B /* MenuViewController.swift in Sources */,
 				AC3B15C327B46F010094D04B /* MenuCell.swift in Sources */,
 				AC3B152F27B299900094D04B /* AppDelegate.swift in Sources */,
+				AC3B15D727B47F180094D04B /* MenuNetworkService.swift in Sources */,
+				AC3B15D927B4801F0094D04B /* GetMenuResponse.swift in Sources */,
 				AC3B153127B299900094D04B /* SceneDelegate.swift in Sources */,
-				AC3B157927B2FC0B0094D04B /* menuCellVC.swift in Sources */,
+				AC3B15D427B478A40094D04B /* NetworkService.swift in Sources */,
+				AC3B15D127B4739E0094D04B /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

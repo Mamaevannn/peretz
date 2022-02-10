@@ -13,6 +13,10 @@ class MenuViewController: UIViewController {
   
     @IBOutlet weak var tableView: UITableView!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
 
 }
 extension MenuViewController: UITableViewDelegate {}

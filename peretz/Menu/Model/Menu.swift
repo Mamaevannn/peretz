@@ -17,8 +17,8 @@ struct Menu {
     var new: Bool
     var variations: Array<Any>
     var price: Int
-//    var image_app: String
-//    var image: String
+    var image_app: String
+    var image: String
 //    var sort: Int
 
     
@@ -30,9 +30,9 @@ struct Menu {
               let description =  dict["description"] as? String,
               let new =  dict["new"] as? Bool,
               let variations =  dict["variations"] as? Array<Any>,
-              let price =  dict["price"] as? Int
-//              let image_app =  dict["image_app"] as? String,
-//              let image =  dict["image"] as? String,
+              let price =  dict["price"] as? Int,
+              let image_app =  dict["image_app"] as? String,
+              let image =  dict["image"] as? String
 //              let sort =  dict["500"] as? Int
         else { return nil}
         
@@ -43,9 +43,10 @@ struct Menu {
         self.new = new
         self.variations = variations
         self.price = price
-//        self.image_app = image_app
-//        self.image = image
+        self.image_app = image_app
+        self.image = image
 //        self.sort = sort
     }
+
 
 }

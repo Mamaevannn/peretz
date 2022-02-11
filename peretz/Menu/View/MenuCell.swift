@@ -12,12 +12,12 @@ class MenuCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
-//    @IBOutlet weak var imageIcon: UIImageView!
+    @IBOutlet weak var imageIcon: UIImageView!
     
-    func configure(with menu: Menu) {
+    func configure(with menu: Menu, andWith image: UIImage) {
         self.nameLabel.text = menu.name
         self.descriptionLabel.text = menu.description
         self.priceLabel.text = "\(menu.price) ₽"
-//        self.imageIcon.image = image
+        self.imageIcon.image = image
     }
 }

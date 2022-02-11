@@ -20,12 +20,15 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nT5-Hv-Z2J">
                                 <rect key="frame" x="20" y="770" width="374" height="46"/>
-                                <color key="backgroundColor" red="0.0" green="0.6470588235294118" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="46" id="T8Z-yk-AHg"/>
                                     <constraint firstAttribute="height" constant="46" id="xBJ-yq-ZL0"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Перейти к покупкам">
+                                    <backgroundConfiguration key="background" cornerRadius="4">
+                                        <color key="backgroundColor" red="0.0" green="0.64705882349999999" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                 </buttonConfiguration>
@@ -129,11 +132,10 @@
                                                                 <constraint firstAttribute="height" constant="32" id="XQa-nw-2z0"/>
                                                             </constraints>
                                                             <state key="normal" title="Button"/>
-                                                            <buttonConfiguration key="configuration" style="plain" image="plus">
+                                                            <buttonConfiguration key="configuration" style="plain" image="plus" imagePadding="0.0">
                                                                 <backgroundConfiguration key="background" cornerRadius="24">
                                                                     <color key="backgroundColor" red="0.0" green="0.64705882349999999" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </backgroundConfiguration>
-                                                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </buttonConfiguration>
                                                         </button>
                                                     </subviews>
@@ -153,6 +155,7 @@
                                                 <constraint firstItem="Xuk-dq-btn" firstAttribute="leading" secondItem="EOj-Ei-wZM" secondAttribute="trailing" constant="16" id="bSY-tp-ttM"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="EOj-Ei-wZM" secondAttribute="bottom" constant="33" id="gAU-4j-kAm"/>
                                                 <constraint firstAttribute="trailing" secondItem="Xuk-dq-btn" secondAttribute="trailing" constant="16" id="gzo-dK-dfi"/>
+                                                <constraint firstItem="QDX-Y0-ErE" firstAttribute="top" relation="lessThanOrEqual" secondItem="Xuk-dq-btn" secondAttribute="bottom" constant="89.5" id="lbc-xs-YiB"/>
                                                 <constraint firstItem="EOj-Ei-wZM" firstAttribute="top" secondItem="4Vs-Ja-LAZ" secondAttribute="top" id="m2f-84-0Of"/>
                                                 <constraint firstAttribute="bottom" secondItem="QDX-Y0-ErE" secondAttribute="bottom" constant="4" id="ocY-G8-5Du"/>
                                                 <constraint firstItem="dkU-Cs-VfG" firstAttribute="leading" relation="lessThanOrEqual" secondItem="QDX-Y0-ErE" secondAttribute="trailing" constant="79.5" id="rmC-PC-jG0"/>
@@ -162,6 +165,7 @@
                                         <color key="backgroundColor" red="0.082352941176470587" green="0.082352941176470587" blue="0.082352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="descriptionLabel" destination="a1s-gP-gd1" id="4Pj-0J-msz"/>
+                                            <outlet property="imageIcon" destination="EOj-Ei-wZM" id="1g4-BU-mLy"/>
                                             <outlet property="nameLabel" destination="94u-BY-E6N" id="A9k-rv-rlx"/>
                                             <outlet property="priceLabel" destination="QDX-Y0-ErE" id="wxy-N4-yIY"/>
                                         </connections>

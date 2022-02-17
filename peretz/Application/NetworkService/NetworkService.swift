@@ -12,6 +12,7 @@ class NetworkService {
     
         static let shared = NetworkService()
         // создали singleton pattern - ИЗУЧИТЬ!
+//    2222
         
     public func getData(url: URL, completion: @escaping (Any) -> ()) {
             let session = URLSession.shared

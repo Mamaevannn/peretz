@@ -22,6 +22,7 @@ struct GetMenuResponse {
             menuPlural.append(menu)
         }
         self.menuPlural = menuPlural
+        
     }
 }
 

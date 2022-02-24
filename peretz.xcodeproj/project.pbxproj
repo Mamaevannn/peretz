@@ -19,28 +19,28 @@
 		AC3B15D727B47F180094D04B /* MenuNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3B15D627B47F180094D04B /* MenuNetworkService.swift */; };
 		AC3B15D927B4801F0094D04B /* GetMenuResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3B15D827B4801F0094D04B /* GetMenuResponse.swift */; };
 		AC3B15DC27B52B4E0094D04B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3B15DB27B52B4E0094D04B /* NetworkError.swift */; };
-		AC3B163A27B66F550094D04B /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3B163727B66E7A0094D04B /* SDWebImage.framework */; };
-		AC3B163B27B66F550094D04B /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC3B163727B66E7A0094D04B /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACC80BC127C7F78400912B4E /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC80BBE27C7F75F00912B4E /* SDWebImage.framework */; };
+		ACC80BC227C7F78400912B4E /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACC80BBE27C7F75F00912B4E /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AC3B163427B66E7A0094D04B /* PBXContainerItemProxy */ = {
+		ACC80BBB27C7F75F00912B4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AC3B162D27B66E7A0094D04B /* SDWebImage.xcodeproj */;
+			containerPortal = ACC80BB427C7F75F00912B4E /* SDWebImage.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 53761325155AD0D5005750A4;
 			remoteInfo = "SDWebImage static";
 		};
-		AC3B163627B66E7A0094D04B /* PBXContainerItemProxy */ = {
+		ACC80BBD27C7F75F00912B4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AC3B162D27B66E7A0094D04B /* SDWebImage.xcodeproj */;
+			containerPortal = ACC80BB427C7F75F00912B4E /* SDWebImage.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 4A2CADFF1AB4BB5300B6BC39;
 			remoteInfo = SDWebImage;
 		};
-		AC3B163827B66E7A0094D04B /* PBXContainerItemProxy */ = {
+		ACC80BBF27C7F75F00912B4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AC3B162D27B66E7A0094D04B /* SDWebImage.xcodeproj */;
+			containerPortal = ACC80BB427C7F75F00912B4E /* SDWebImage.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 80B6DFEE2142B71600BCB334;
 			remoteInfo = SDWebImageMapKit;
@@ -48,13 +48,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		AC3B156A27B2F3100094D04B /* Embed Frameworks */ = {
+		ACC80BB327C7F6FD00912B4E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AC3B163B27B66F550094D04B /* SDWebImage.framework in Embed Frameworks */,
+				ACC80BC227C7F78400912B4E /* SDWebImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,7 +76,7 @@
 		AC3B15D627B47F180094D04B /* MenuNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuNetworkService.swift; sourceTree = "<group>"; };
 		AC3B15D827B4801F0094D04B /* GetMenuResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMenuResponse.swift; sourceTree = "<group>"; };
 		AC3B15DB27B52B4E0094D04B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		AC3B162D27B66E7A0094D04B /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = "../../../Downloads/SDWebImage-master/SDWebImage.xcodeproj"; sourceTree = "<group>"; };
+		ACC80BB427C7F75F00912B4E /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = "SDWebImage-master/SDWebImage.xcodeproj"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC3B163A27B66F550094D04B /* SDWebImage.framework in Frameworks */,
+				ACC80BC127C7F78400912B4E /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +94,7 @@
 		AC3B152227B299900094D04B = {
 			isa = PBXGroup;
 			children = (
-				AC3B162D27B66E7A0094D04B /* SDWebImage.xcodeproj */,
+				ACC80BB427C7F75F00912B4E /* SDWebImage.xcodeproj */,
 				AC3B152D27B299900094D04B /* peretz */,
 				AC3B152C27B299900094D04B /* Products */,
 				AC3B156727B2F3100094D04B /* Frameworks */,
@@ -224,12 +224,12 @@
 			path = Responses;
 			sourceTree = "<group>";
 		};
-		AC3B162E27B66E7A0094D04B /* Products */ = {
+		ACC80BB527C7F75F00912B4E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC3B163527B66E7A0094D04B /* libSDWebImage.a */,
-				AC3B163727B66E7A0094D04B /* SDWebImage.framework */,
-				AC3B163927B66E7A0094D04B /* SDWebImageMapKit.framework */,
+				ACC80BBC27C7F75F00912B4E /* libSDWebImage.a */,
+				ACC80BBE27C7F75F00912B4E /* SDWebImage.framework */,
+				ACC80BC027C7F75F00912B4E /* SDWebImageMapKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -244,7 +244,7 @@
 				AC3B152727B299900094D04B /* Sources */,
 				AC3B152827B299900094D04B /* Frameworks */,
 				AC3B152927B299900094D04B /* Resources */,
-				AC3B156A27B2F3100094D04B /* Embed Frameworks */,
+				ACC80BB327C7F6FD00912B4E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -283,8 +283,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = AC3B162E27B66E7A0094D04B /* Products */;
-					ProjectRef = AC3B162D27B66E7A0094D04B /* SDWebImage.xcodeproj */;
+					ProductGroup = ACC80BB527C7F75F00912B4E /* Products */;
+					ProjectRef = ACC80BB427C7F75F00912B4E /* SDWebImage.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -295,25 +295,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		AC3B163527B66E7A0094D04B /* libSDWebImage.a */ = {
+		ACC80BBC27C7F75F00912B4E /* libSDWebImage.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libSDWebImage.a;
-			remoteRef = AC3B163427B66E7A0094D04B /* PBXContainerItemProxy */;
+			remoteRef = ACC80BBB27C7F75F00912B4E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		AC3B163727B66E7A0094D04B /* SDWebImage.framework */ = {
+		ACC80BBE27C7F75F00912B4E /* SDWebImage.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = SDWebImage.framework;
-			remoteRef = AC3B163627B66E7A0094D04B /* PBXContainerItemProxy */;
+			remoteRef = ACC80BBD27C7F75F00912B4E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		AC3B163927B66E7A0094D04B /* SDWebImageMapKit.framework */ = {
+		ACC80BC027C7F75F00912B4E /* SDWebImageMapKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = SDWebImageMapKit.framework;
-			remoteRef = AC3B163827B66E7A0094D04B /* PBXContainerItemProxy */;
+			remoteRef = ACC80BBF27C7F75F00912B4E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

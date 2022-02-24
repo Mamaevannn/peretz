@@ -10,7 +10,6 @@ import SDWebImage
 
 class MenuCell: UITableViewCell {
     
-var value = 0
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
@@ -23,19 +22,19 @@ var value = 0
     
     
 //
-//    var id = 0
-//    var amount = 0
-//    let defaults = UserDefaults.standard
-////
-//  func showHide(_ action: Bool){
-//    minusButton.isHidden = action
-//    amountLabel.isHidden = action
-//}
-//
-//func saveCount(_ countDish: Int) {
-//    amountLabel.text = String(countDish)
-//    defaults.set(countDish, forKey: String(id))
-//}
+    var id = 0
+    let defaults = UserDefaults.standard
+    var amount = 0
+
+  func showHide(_ action: Bool){
+    minusButton.isHidden = action
+    amountLabel.isHidden = action
+}
+
+func saveCount(_ countDish: Int) {
+    amountLabel.text = String(countDish)
+    defaults.set(countDish, forKey: String(id))
+}
 
     func configure(with menu: Menu) {
         if menu.new == false {
@@ -44,8 +43,10 @@ var value = 0
                       newLabel.isHidden = false
         
                   }
-        minusButton.isHidden = true
-        amountLabel.isHidden = true
+//        minusButton.isHidden = true
+//        amountLabel.isHidden = true
+        self.amountLabel.text = String(amount)
+        self.id = menu.id
         self.nameLabel.text = menu.name
         self.descriptionLabel.text = menu.description
         self.priceLabel.text = "\(menu.price) ₽"
@@ -55,32 +56,50 @@ var value = 0
                               options:.continueInBackground,
                               completed: nil)
         
-//        if defaults.integer(forKey: String(id))  > 0 {
-//            self.amountLabel.text = String(defaults.integer(forKey: String(id)))
-//            amount = defaults.integer(forKey: String(id))
-//            showHide(false)
-//        } else {
-//            showHide(true)
-//        }
+        if defaults.integer(forKey: String(id))  > 0 {
+            self.amountLabel.text = String(defaults.integer(forKey: String(id)))
+            amount = defaults.integer(forKey: String(id))
+            showHide(false)
+        } else {
+            showHide(true)
+        }
     }
     
-    @IBAction func addOne(_ sender: Any) {
-        minusButton.isHidden = false
-        amountLabel.isHidden = false
-        value = value+1
-        amountLabel.text = "\(value)"
+    func incDec(_ incDec: Bool) {
+        if (incDec) {
+            amount = amount + 1
+        } else {
+            amount = amount - 1
+        }
+    }
+    
+    @IBAction func addOne(_ sender: UIButton) {
+//        minusButton.isHidden = false
+//        amountLabel.isHidden = false
+//        value = value+1
+//        amountLabel.text = "\(value)"
+        incDec(true)
+        saveCount(amount)
+        if amount > 0 {
+        showHide(false)
+        }
 
    
     }
     
-    @IBAction func minusOne(_ sender: Any) {
-        value = value-1
-        amountLabel.text = "\(value)"
-        if value <= 0 {
-            minusButton.isHidden = true
-            amountLabel.isHidden = true
-
+    @IBAction func minusOne(_ sender: UIButton) {
+//        value = value-1
+//        amountLabel.text = "\(value)"
+//        if value <= 0 {
+//            minusButton.isHidden = true
+//            amountLabel.isHidden = true
+//
+        incDec(false)
+        saveCount(amount)
+        if amount == 0 {
+            showHide(true)
         }
+//        }
     }
     
     
